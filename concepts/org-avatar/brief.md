@@ -6,12 +6,14 @@
 
 Avatar for the `northharbor-dev` GitHub organization. Combines the NorthHarbor lighthouse motif with a tech/development identity.
 
-## Selected Concept: Lighthouse + NH Foundation with Gradient
+## Selected Concept: Lighthouse + NH Foundation (Ideogram final)
 
 - Flat minimalist lighthouse in teal/seafoam with dark slate blue outlines
 - Code angle brackets `< >` in the light beams (tech/dev signal)
 - "NH" lettering integrated at the lighthouse base
-- Trapezoid foundation with slightly angled sides, multi-toned blue-gray gradient panels matching the lighthouse body treatment
+- `</>` code symbol inside the lantern room
+- NH letters integrated into multi-toned foundation base with angled sides
+- Horizontal striping on tower body, subtle drop shadow
 - Light seafoam/mint background
 - Compact, designed for small avatar rendering
 
@@ -28,3 +30,4 @@ Avatar for the `northharbor-dev` GitHub organization. Combines the NorthHarbor l
 5. Foundation refined: smaller plinth (V2b), then taller lighthouse (V1 final) -- selected
 6. Added trapezoid foundation with angled sides beneath NH band
 7. Foundation gradient: multi-toned blue-gray panels matching lighthouse body -- final selection
+8. Polished in Ideogram: `</>` in lantern room, NH in foundation, horizontal striped tower -- final
