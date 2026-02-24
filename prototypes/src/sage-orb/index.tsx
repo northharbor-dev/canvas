@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import { SageOrb } from './SageOrb'
+import type { OrbState } from './SageOrb'
 
-type OrbState = 'rest' | 'thinking' | 'responding'
+export { SageOrb } from './SageOrb'
+export type { OrbState } from './SageOrb'
 
 const stateDescriptions: Record<OrbState, { label: string; description: string }> = {
   rest: {
