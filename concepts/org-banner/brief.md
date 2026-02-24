@@ -8,9 +8,11 @@ A wide panoramic banner for the `northharbor-dev` organization, extending the av
 
 ## Selected Concept
 
-**File:** `07-selected-no-dock.png`
+**File:** `08-final-chatgpt-polished.png`
 
-Peaceful harbor scene with the avatar lighthouse on the right, "NorthHarbor" text scaling within the projected beam, layered highland mountains, calm water, and a natural curving shoreline. No dock structures -- clean and serene.
+![Final Banner](08-final-chatgpt-polished.png)
+
+Polished version generated via ChatGPT/DALL-E using the Cursor concept (`07-selected-no-dock.png`) as a reference. Peaceful harbor scene with the avatar lighthouse on the right, "NorthHarbor" text scaling within the projected beam, layered highland mountains, calm water, and a natural curving shoreline. Smoother gradients and cleaner rendering than the concept version.
 
 ---
 
@@ -88,6 +90,18 @@ Final version. The scene is clean and serene -- natural shoreline on the left, c
 
 ---
 
-## Ideogram Prompt (for polished version)
+### Iteration 5: Polished via ChatGPT/DALL-E
+
+Used the Cursor concept as a reference image with ChatGPT/DALL-E to produce a higher-fidelity version.
+
+**Final: ChatGPT polished**
+
+![Final](08-final-chatgpt-polished.png)
+
+Nearly identical composition to the Cursor concept with improved rendering quality -- smoother water gradients, cleaner mountain silhouettes, refined lighthouse details. Production-ready.
+
+---
+
+## Prompt (for future regeneration)
 
 > Wide panoramic banner in flat minimalist illustration style, 3:1 aspect ratio. Peaceful elegant harbor scene. Right side: a tall lighthouse on a rocky shoreline with teal and seafoam horizontal stripes, dark slate blue outlines, code brackets </> in the glowing lantern room, NH letters in the angled foundation base. The lighthouse projects a soft triangular beam of light sweeping diagonally upward to the left. Within the beam, the word NorthHarbor appears in muted translucent seafoam, scaling larger as the beam widens. Layered rolling highland mountains in progressively lighter slate blue behind. Calm harbor water with stylized flat waves in teal and seafoam. Left side: gentle curving natural coastline, no docks or piers. Light seafoam mint sky. Serene tranquil mood. Flat clean-outlined illustration, muted teal dark slate blue seafoam green mint palette. No photorealism.
