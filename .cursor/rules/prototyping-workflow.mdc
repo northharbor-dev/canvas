@@ -1,0 +1,62 @@
+---
+description: UI prototyping workflow for concept generation and iteration
+globs:
+alwaysApply: true
+---
+
+# Prototyping Workflow
+
+## Concept Request Flow
+
+When the user describes a UI concept:
+
+1. **Echo back a structured brief** before generating anything:
+   - **Subject**: What is being designed (e.g., dashboard, settings panel, onboarding flow)
+   - **Layout**: Spatial arrangement (e.g., sidebar + main content, full-width cards, tabbed)
+   - **Key Elements**: List the specific UI components mentioned (buttons, charts, forms, etc.)
+   - **Style Notes**: Any aesthetic direction (minimal, dense, playful, corporate, etc.)
+   - **Constraints**: Device target, accessibility needs, brand alignment
+
+2. **Wait for user confirmation** ("go" / "looks good") or revision before proceeding.
+
+3. **Generate two options in parallel** using two Task subagents:
+   - Option A and Option B should take meaningfully different approaches (layout variation, visual emphasis, interaction model, etc.)
+   - Each subagent calls `GenerateImage` with a detailed prompt that includes "wireframe sketch style" or "hand-drawn UI mockup" directive
+   - Save images to `concepts/{concept-name}/option-a.png` and `option-b.png`
+
+4. **Create or update `concepts/{concept-name}/brief.md`** with:
+   - The confirmed description
+   - Which options were generated
+   - User feedback and iteration notes
+
+## Concept Naming
+
+- Use lowercase, hyphen-separated names (e.g., `retirement-dashboard`, `plan-wizard`, `report-card`)
+- Keep names short and descriptive
+
+## Prototype Promotion
+
+When the user says a concept is ready for interactive prototyping:
+
+1. Create a new page/route under `prototypes/src/{concept-name}/`
+2. Use React + TypeScript + TailwindCSS
+3. Build static UI that simulates the selected mockup -- no real backend calls
+4. Use placeholder data and mock interactions (state changes, transitions, modals)
+
+## File Organization
+
+```
+concepts/{concept-name}/
+  option-a.png          # First generated mockup
+  option-b.png          # Second generated mockup
+  brief.md              # Description, feedback, iteration log
+
+prototypes/src/{concept-name}/
+  index.tsx             # Main page component
+  components/           # Concept-specific components
+```
+
+## Agent Cleanup
+
+- Do not leave behind test data or temporary files
+- If scratch files are created during iteration, remove them before finishing

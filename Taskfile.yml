@@ -1,0 +1,58 @@
+version: '3'
+
+vars:
+  PROTOTYPES_DIR: prototypes
+
+tasks:
+  default:
+    desc: List available tasks
+    cmds:
+      - task --list
+
+  setup:
+    desc: Install all dependencies
+    dir: '{{.PROTOTYPES_DIR}}'
+    cmds:
+      - npm install
+
+  dev:
+    desc: Start Vite dev server for prototypes
+    dir: '{{.PROTOTYPES_DIR}}'
+    cmds:
+      - npm run dev
+
+  build:
+    desc: Build prototypes for production
+    dir: '{{.PROTOTYPES_DIR}}'
+    cmds:
+      - npm run build
+
+  preview:
+    desc: Preview production build locally
+    dir: '{{.PROTOTYPES_DIR}}'
+    cmds:
+      - npm run preview
+
+  lint:
+    desc: Run ESLint on prototype source
+    dir: '{{.PROTOTYPES_DIR}}'
+    cmds:
+      - npm run lint
+
+  typecheck:
+    desc: Run TypeScript type checking
+    dir: '{{.PROTOTYPES_DIR}}'
+    cmds:
+      - npx tsc --noEmit
+
+  check:
+    desc: Run lint and typecheck
+    cmds:
+      - task: lint
+      - task: typecheck
+
+  clean:
+    desc: Remove build artifacts and node_modules
+    dir: '{{.PROTOTYPES_DIR}}'
+    cmds:
+      - rm -rf dist node_modules
